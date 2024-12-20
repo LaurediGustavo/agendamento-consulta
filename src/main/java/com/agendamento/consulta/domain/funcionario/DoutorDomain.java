@@ -13,6 +13,7 @@ public class DoutorDomain extends FuncionarioDomain {
     public DoutorDomain() {}
 
     public DoutorDomain(Long id,
+                        Long consultorioId,
                         String nome,
                         String sobrenome,
                         LocalDate dataDeNascimento,
@@ -28,7 +29,7 @@ public class DoutorDomain extends FuncionarioDomain {
                         String cro,
                         Boolean desabilitado,
                         String email) {
-        super(id, nome, sobrenome, dataDeNascimento, cpf, genero, telefone, cep, logradouro, bairro, numero, bloco, tipoFuncionario, desabilitado, email, null);
+        super(id, consultorioId, nome, sobrenome, dataDeNascimento, cpf, genero, telefone, cep, logradouro, bairro, numero, bloco, tipoFuncionario, desabilitado, email, null);
         this.cro = cro;
     }
 
